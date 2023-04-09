@@ -1,0 +1,25 @@
+{
+  "name": "lotterydapp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "compile": "solcjs --abi --include-path node_modules/ --base-path . blockchain/contracts/lottery.sol --output-dir blockchain/build"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.4.1",
+    "bulma": "^0.9.4",
+    "next": "12.2.2",
+    "react": "18.2.0",
+    "solc": "^0.8.13",
+    "react-dom": "18.2.0",
+    "web3": "^1.7.4"
+  },
+  "devDependencies": {
+    "eslint": "8.19.0",
+    "eslint-config-next": "12.2.2"
+  }
+}
