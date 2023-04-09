@@ -20,7 +20,7 @@ export default function Home() {
   useEffect(() => {
     updateState()
     showAddress()
-  }, [lcContract])
+  }, [lcContract, showAddress, updateState])
 
   
   const updateState =  () => {
